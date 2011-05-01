@@ -65,6 +65,7 @@ struct {
     { "gsm.",             AID_RADIO,    0 },
     { "persist.radio",    AID_RADIO,    0 },
     { "net.dns",          AID_RADIO,    0 },
+    { "net.gannet",       AID_RADIO,    0 },
     { "net.",             AID_SYSTEM,   0 },
     { "dev.",             AID_SYSTEM,   0 },
     { "runtime.",         AID_SYSTEM,   0 },
@@ -81,7 +82,8 @@ struct {
     { "service.adb.root", AID_SHELL,    0 },
     { "persist.sys.",     AID_SYSTEM,   0 },
     { "persist.service.", AID_SYSTEM,   0 },
-    { "persist.security.", AID_SYSTEM,   0 },
+    { "persist.security.",AID_SYSTEM,   0 },
+    { "wimax.",           AID_SYSTEM,   1000 },
     { NULL, 0, 0 }
 };
 

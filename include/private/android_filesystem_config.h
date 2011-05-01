@@ -146,6 +146,7 @@ static struct fs_path_config android_dirs[] = {
     { 00755, AID_ROOT,   AID_SHELL,  "system/xbin" },
     { 00755, AID_ROOT,   AID_ROOT,   "system/etc/ppp" },
     { 00777, AID_ROOT,   AID_ROOT,   "sdcard" },
+    { 00771, AID_SYSTEM, AID_SYSTEM, "sd-ext" },
     { 00755, AID_ROOT,   AID_ROOT,   0 },
 };
 
@@ -188,12 +189,14 @@ static struct fs_path_config android_files[] = {
 		/* the following file is INTENTIONALLY set-uid, and IS included
 		 * in user builds. */
     { 06750, AID_ROOT,      AID_SHELL,     "system/bin/run-as" },
+    { 06755, AID_ROOT,      AID_ROOT,      "system/xbin/hcitool" },
     { 00755, AID_ROOT,      AID_SHELL,     "system/bin/*" },
     { 00755, AID_ROOT,      AID_SHELL,     "system/xbin/*" },
     { 00755, AID_ROOT,      AID_SHELL,     "system/vendor/bin/*" },
     { 00750, AID_ROOT,      AID_SHELL,     "sbin/*" },
     { 00755, AID_ROOT,      AID_ROOT,      "bin/*" },
     { 00750, AID_ROOT,      AID_SHELL,     "init*" },
+    { 00750, AID_ROOT,      AID_SHELL,     "system/etc/init.d/*" },
     { 00644, AID_ROOT,      AID_ROOT,       0 },
 };
 
